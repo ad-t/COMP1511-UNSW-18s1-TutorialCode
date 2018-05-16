@@ -1,0 +1,20 @@
+# ignore all
+*
+
+# un-ignore files with extensions to prevent binaries from being 
+# uploaded to git
+!*.*
+
+# un-ignore all directories
+!*/
+
+# ignore files related to code reviews
+*/code_review/*
+code_review.c
+code_review_solution.c
+
+# ignore swap files
+.*.swp
+
+# ignore default gcc / dcc unnamed binaries
+a.out
