@@ -18,3 +18,6 @@ code_review_solution.c
 
 # ignore default gcc / dcc unnamed binaries
 a.out
+
+# ignore .o files
+*.o
