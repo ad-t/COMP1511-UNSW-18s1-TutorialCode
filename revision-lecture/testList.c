@@ -10,10 +10,36 @@ void test_get_all_even_values_function();
 void test_get_all_odd_values_function();
 
 int main (int argc, char * argv[]) {
+
+  int test_array_one[] = { 1, 2, 3, 4, 5, 6, 7 };
+  int test_array_two[] = { 2, 4, 6, 8 };
+  struct node *test_list_one = create_list(test_array_one, 7);
+  struct node *test_list_two = create_list(test_array_two, 4);
+  print_list(test_list_one);
+  print_list(test_list_two);
+  assert(count_common_elements(test_list_one, test_list_two) == 3);
+  /*
+  free_list(test_list_one);
+  free_list(test_list_two);
+  */
+
+  int test_array_three[] = { -5, -3, 1, 2, 3, 4, 5, 6, 8 };
+  int test_array_four[] = { -5, 2, 4, 6, 8 };
+  struct node *test_list_three = create_list(test_array_three, 9);
+  struct node *test_list_four = create_list(test_array_four, 5);
+  print_list(test_list_three);
+  print_list(test_list_four);
+  assert(count_common_elements(test_list_three, test_list_four) == 5);
+  /*
+  free_list(test_list_three);
+  free_list(test_list_four);
+  */
   
   test_list_creation();
   test_get_all_even_values_function();
   test_get_all_odd_values_function();
+  /*
+  */
 
   return EXIT_SUCCESS;
 }

@@ -65,4 +65,13 @@ struct node *get_all_even_values(struct node *list);
  */
 struct node *get_all_odd_values(struct node *list);
 
+/*
+ * Function which counts the amount of common elements in two given
+ * sets (ascending order, no duplicates).
+ *
+ * Returns a positive integer or 0 outlining the amount of common values
+ * in the two provided lists.
+ */
+int count_common_elements(struct node *list_one, struct node *list_two);
+
 #endif // LIST_H
