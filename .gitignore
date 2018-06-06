@@ -8,6 +8,9 @@
 # un-ignore all directories
 !*/
 
+# un-ignore Makefiles
+!Makefile
+
 # ignore files related to code reviews
 */code_review/*
 code_review.c
@@ -21,3 +24,6 @@ a.out
 
 # ignore .o files
 *.o
+
+# ignore revision lecture solutions until after the lecture
+/revision-lecture/solution/*
