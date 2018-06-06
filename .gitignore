@@ -25,5 +25,3 @@ a.out
 # ignore .o files
 *.o
 
-# ignore revision lecture solutions until after the lecture
-/revision-lecture/solution/*
